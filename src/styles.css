@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+  margin: 0; /* Eliminar márgenes por defecto */
+  padding: 0; /* Eliminar relleno por defecto */
+  box-sizing: border-box; /* Asegurarse de que el box-sizing sea border-box */
+}
+
+nav {
+  background-color: rgb(7, 56, 20); /* Color verde oscuro para el fondo del nav */
+  padding: 20px; /* Espaciado interno del nav */
+  position: fixed; /* Fijar el nav en el lado izquierdo */
+  top: 0; /* Posición en la parte superior */
+  left: 0; /* Posicionar el nav desde el borde izquierdo */
+  height: 100%; /* Abarcar toda la altura de la pantalla */
+  width: 250px; /* Ancho del nav */
+  z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+  display: flex; /* Usar flexbox para alinear elementos */
+  flex-direction: column; /* Alinear elementos de forma vertical */
+  justify-content: center; /* Alinear elementos al principio verticalmente */
+  align-items: center; /* Centrar horizontalmente los elementos */
+}
+
+
+nav a {
+  color: white; /* Color del texto */
+  text-decoration: none; /* Quitar subrayado */
+  margin: 10px 0; /* Espaciado entre los enlaces */
+  padding: 10px; /* Espaciado interno de los enlaces */
+  width: 100%; /* Que los enlaces abarquen todo el ancho del nav */
+  text-align: center; /* Centrar el texto de los enlaces */
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Efecto hover */
+}
+
+
+nav a.active {
+  font-weight: bold; /* Haz que el texto activo sea más audaz */
+}
+
+nav a.active[href="/python"] {
+   /*  color: #2fb611; Azul cielo para Python */
+}
+
+nav a.active[href="/html"] {
+ /* color: #ff6200;  Anaranjado para HTML */
+}
+
+nav a.active[href="/javascript"] {
+ /* color: yellow;  Amarillo para JavaScript */
+}
+
+nav a.active[href="/css"] {
+  /*color: #5707c7;  Morado oscuro para CSS */
+}
+
+nav a.active[href="/php"] {
+  /*color: #4700ab;  Azul fuerte para PHP */
+}
+
+nav a.active[href="/kotlin"] {
+  /*color: #BA55D3;  Morado claro para Kotlin */
+}
+
+nav a.active[href="/java"] {
+  /*color: #a5682a;  Café para Java */
+}
+
+nav a.active[href="/dart"] {
+  /*color: #01f9e0a3;  Agua marina para Dart */
+}
